@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TabHost 
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
-  android:id="@android:id/tabhost"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:background="@drawable/back_repeat">
-  <LinearLayout
-    android:orientation="vertical"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/main_linear"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-     <com.google.ads.AdView 
-      android:id="@+id/adView"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:background="#000000"
-      ads:adUnitId="a15127843908af3"
-      ads:adSize="BANNER"
-      ads:loadAdOnCreate="true"/>
-    <TabWidget
-      android:id="@android:id/tabs"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" />
-    <FrameLayout
-      android:id="@android:id/tabcontent"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:padding="5dp" />
-  </LinearLayout>
-</TabHost>
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_repeat">
+    <com.google.ads.AdView 
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        ads:adUnitId="a15296cd7694fec"
+        ads:adSize="BANNER"
+        ads:loadAdOnCreate="true"/>
+    <GridView 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center">
+    </GridView>
+</LinearLayout>

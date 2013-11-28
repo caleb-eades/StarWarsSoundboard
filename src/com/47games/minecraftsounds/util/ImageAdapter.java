@@ -1,4 +1,4 @@
-package com.foursevengames.minecraftsounds.util;
+package com.foursevengames.starwarssounds.util;
 
 import android.widget.BaseAdapter;
 import android.content.Context;
